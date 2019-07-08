@@ -534,9 +534,9 @@ public class SingleDateAndTimePicker extends LinearLayout {
         if (displayYears && this.minDate != null && this.maxDate != null) {
             Calendar calendar = Calendar.getInstance();
             calendar.setTime(this.minDate);
-            yearsPicker.setMinYear(calendar.get(Calendar.YEAR));
+            //yearsPicker.setMinYear(calendar.get(Calendar.YEAR));
             calendar.setTime(this.maxDate);
-            yearsPicker.setMaxYear(calendar.get(Calendar.YEAR));
+            //yearsPicker.setMaxYear(calendar.get(Calendar.YEAR));
         }
     }
 

@@ -952,7 +952,7 @@ public abstract class WheelPicker<V> extends View {
             WheelYearPicker yearPick = (WheelYearPicker) this;
             Calendar calendar = Calendar.getInstance();
             calendar.setTime(date);
-            return calendar.get(Calendar.YEAR);
+            return calendar.get(Calendar.YEAR) - yearPick.minYear;
         }
 
         int formatItemInt = Integer.MIN_VALUE;
