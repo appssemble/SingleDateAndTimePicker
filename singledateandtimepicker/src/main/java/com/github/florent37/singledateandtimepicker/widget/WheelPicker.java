@@ -5,7 +5,6 @@ import android.animation.AnimatorListenerAdapter;
 import android.animation.ValueAnimator;
 import android.annotation.TargetApi;
 import android.content.Context;
-import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.graphics.Camera;
 import android.graphics.Canvas;
@@ -953,7 +952,7 @@ public abstract class WheelPicker<V> extends View {
             WheelYearPicker yearPick = (WheelYearPicker) this;
             Calendar calendar = Calendar.getInstance();
             calendar.setTime(date);
-            return calendar.get(Calendar.YEAR) - yearPick.minYear;
+            return calendar.get(Calendar.YEAR);
         }
 
         int formatItemInt = Integer.MIN_VALUE;
